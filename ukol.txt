@@ -1,0 +1,25 @@
+1.
+
+SELECT name, address FROM FamousVilla WHERE NOT architecturalStyle = 'funkcionalismus' AND constructionCompleted - constructionStated >= 1;
+
+2.
+
+SELECT name FROM FamousVilla WHERE address LIKE '%Pisárky%';
+
+3.
+
+INSERT INTO FamousVilla VALUES
+(10,'Münzova Vila','Eduard Münz','Ernst Wiesner',1924,1926,'funkcionalismus','Hroznová 86/19, Pisárky, Brno-střed'),
+(11,'Vila Stiassni','Alfred a Hermína Stiassni','Ernst Wiesner',1927,1929,'funkcionalismus','Hroznová 82/14, Brno-střed, Pisárky');
+
+4.
+
+UPDATE FamousVilla SET architect = 'Norbert Schlesinger', constructionCompleted = 1935 WHERE name LIKE 'Löw-Beer%';
+
+5.
+
+DELETE FROM FamousVilla WHERE architecturalStyle IN ('purismus', 'secese');
+
+6.
+
+INSERT INTO FamousVilla VALUES (null,'','','Richard Načrtl',2021,null,'moderna','Karlovská 624, Dolní Kounice');
