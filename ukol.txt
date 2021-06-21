@@ -22,4 +22,4 @@ DELETE FROM FamousVilla WHERE architecturalStyle IN ('purismus', 'secese');
 
 6.
 
-INSERT INTO FamousVilla VALUES (null,'','','Richard Načrtl',2021,null,'moderna','Karlovská 624, Dolní Kounice');
+INSERT INTO FamousVilla (architect, constructionStated,architecturalStyle, address) VALUES ('Richard Načrtl',2021,'moderna','Karlovská 624, Dolní Kounice');
